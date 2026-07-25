@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Edit Questions</h1>
+
+    <!-- Search Form -->
+    <form method="GET">
+        <input type="text" name="search" placeholder="Search by Subject or Question" value="{{ search }}">
+        <button type="submit">Search</button>
+    </form>
+    <br>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>ID</th>
+            <th>Subject</th>
+            <th>Question</th>
+            <th>Action</th>
+        </tr>
+
+        {% for q in questions %}
+        <tr>
+            <td>{{ q[0] }}</td>
+            <td>{{ q[1] }}</td>
+            <td>{{ q[2] }}</td>
+            <td>
+                <a href="/update_question/{{ q[0] }}">
+                    <button>Edit</button>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+    <br><br>
+    
+    <!-- Pagination Buttons -->
+    <a href="/edit_question?page={{ page-1 }}&search={{ search }}">
+        <button {% if page == 1 %}disabled{% endif %}>Previous</button>
+    </a>
+    
+    <a href="/edit_question?page={{ page+1 }}&search={{ search }}">
+        <button>Next</button>
+    </a>
+    
+    <br><br>
+
+    <a href="/admin_dashboard">
+        <button>Back</button>
+    </a>
+
+</div>
+
+</body>
+</html>

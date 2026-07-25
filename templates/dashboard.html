@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>🎓 Online Quiz System</h1>
+
+<h2>Welcome, {{ session['fullname'] }} 👋</h2>
+
+<div class="menu">
+
+<a href="/subjects">
+<button>📝 Start Quiz</button>
+</a>
+
+<a href="/profile">
+<button>👤 My Profile</button>
+</a>
+
+<a href="/logout">
+<button>🚪 Logout</button>
+</a>
+
+</div>
+
+<hr>
+
+<h3>🔐 Administrator</h3>
+
+<a href="/admin_login">
+<button>Admin Login</button>
+</a>
+
+</div>
+
+</body>
+
+</html>

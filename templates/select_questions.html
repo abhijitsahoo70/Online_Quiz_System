@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Questions</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>{{ subject }} Quiz</h1>
+
+<h2>Select Number of Questions</h2>
+
+<form action="/quiz" method="GET">
+
+<input type="hidden" name="subject" value="{{ subject }}">
+
+<label>Choose Questions:</label>
+
+<select name="count">
+
+{% for i in range(1,101) %}
+
+<option value="{{ i }}">{{ i }}</option>
+
+{% endfor %}
+
+</select>
+
+<br><br>
+
+<button type="submit">
+Start Quiz
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Quiz History</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Quiz History</h1>
+
+<br>
+
+<table class="result-table">
+
+<tr>
+    <th>Email</th>
+    <th>Subject</th>
+    <th>No. of Questions</th>
+    <th>Score</th>
+    <th>Percentage</th>
+    <th>Date</th>
+</tr>
+
+<tbody>
+
+{% for row in records %}
+
+<tr>
+
+<td>{{ row[0] }}</td>   <!-- Email -->
+
+<td>{{ row[1] }}</td>   <!-- Subject -->
+
+<td>{{ row[3] }}</td>   <!-- No. of Questions -->
+
+<td>{{ row[2] }}</td>   <!-- Score -->
+
+<td>{{ row[4] }}%</td>  <!-- Percentage -->
+
+<td>{{ row[5] }}</td>   <!-- Date -->
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+<br>
+
+<a href="/dashboard">
+
+<button>
+
+Back to Dashboard
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

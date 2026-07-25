@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ subject }} Quiz</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>{{ subject }} Quiz</h1>
+
+<h3>
+Question
+<span id="currentQuestion">1</span>
+of {{ total }}
+</h3>
+
+<div class="palette">
+
+{% for i in range(1,total+1) %}
+
+<button
+type="button"
+class="qbtn"
+onclick="gotoQuestion({{loop.index0}})"
+id="btn{{loop.index0}}">
+
+{{i}}
+
+</button>
+
+{% endfor %}
+
+</div>
+
+<div id="timerBox">
+    ⏰ Time Left:
+    <span id="timer">{{ timer }}:00</span>
+</div>
+
+<br>
+
+<form action="/result" method="POST" id="quizForm">
+
+<input type="hidden"
+name="subject"
+value="{{ subject }}">
+
+{% for q in questions %}
+
+<div class="question"
+
+{% if loop.index != 1 %}
+style="display:none"
+{% endif %}>
+
+<h2>Question {{ loop.index }}</h2>
+
+<p>{{ q[0] }}</p>
+
+<label class="option">
+<input type="radio"
+name="q{{loop.index}}"
+value="{{q[1]}}">
+A. {{q[1]}}
+</label>
+
+<br><br>
+
+<label class="option">
+<input type="radio"
+name="q{{loop.index}}"
+value="{{q[2]}}">
+B. {{q[2]}}
+</label>
+
+<br><br>
+
+<label class="option">
+<input type="radio"
+name="q{{loop.index}}"
+value="{{q[3]}}">
+C. {{q[3]}}
+</label>
+
+<br><br>
+
+<label class="option">
+<input type="radio"
+name="q{{loop.index}}"
+value="{{q[4]}}">
+D. {{q[4]}}
+</label>
+
+<input type="hidden"
+name="answer{{loop.index}}"
+value="{{q[5]}}">
+
+<input type="hidden"
+name="question{{loop.index}}"
+value="{{q[0]}}">
+
+</div>
+
+{% endfor %}
+
+<br>
+
+<button type="button" id="prevBtn">
+Previous
+</button>
+
+<button type="button" id="nextBtn">
+Next
+</button>
+
+<button
+type="submit"
+id="submitBtn"
+style="display:none">
+Submit Quiz
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+let current = 0;
+
+const questions =
+document.querySelectorAll(".question");
+
+const total =
+questions.length;
+
+function showQuestion(index){
+
+questions.forEach(q=>{
+q.style.display="none";
+});
+
+questions[index].style.display="block";
+
+document.querySelectorAll(".qbtn").forEach(btn=>{
+btn.classList.remove("current");
+});
+
+document.getElementById(
+"btn"+index
+).classList.add("current");
+
+document.getElementById(
+"currentQuestion"
+).innerText=index+1;
+
+for(let i=0;i<questions.length;i++){
+
+let selected=
+document.querySelector(
+'input[name="q'+(i+1)+'"]:checked'
+);
+
+if(selected){
+
+document.getElementById(
+"btn"+i
+).classList.add("answered");
+
+}else{
+
+document.getElementById(
+"btn"+i
+).classList.remove("answered");
+
+}
+
+}
+
+document.getElementById(
+"prevBtn"
+).style.display=
+(index==0)?"none":"inline-block";
+
+document.getElementById(
+"nextBtn"
+).style.display=
+(index==total-1)?
+"none":"inline-block";
+
+document.getElementById(
+"submitBtn"
+).style.display=
+(index==total-1)?
+"inline-block":"none";
+
+}
+
+function gotoQuestion(index){
+
+current=index;
+
+showQuestion(current);
+
+}
+
+document.getElementById(
+"nextBtn"
+).onclick=function(){
+
+if(current<total-1){
+
+current++;
+
+showQuestion(current);
+
+}
+
+};
+
+document.getElementById(
+"prevBtn"
+).onclick=function(){
+
+if(current>0){
+
+current--;
+
+showQuestion(current);
+
+}
+
+};
+
+showQuestion(current);
+
+let minutes = {{ timer }};
+let seconds = 0;
+
+const timer =
+document.getElementById("timer");
+
+const countdown =
+setInterval(function(){
+
+if(seconds==0){
+
+if(minutes==0){
+
+clearInterval(countdown);
+
+alert("Time Over!");
+
+document.getElementById("quizForm").submit();
+
+return;
+
+}
+
+minutes--;
+
+seconds=59;
+
+}else{
+
+seconds--;
+
+}
+
+timer.innerHTML=
+
+String(minutes).padStart(2,'0')
+
++ ":"
+
++
+
+String(seconds).padStart(2,'0');
+
+},1000);
+
+</script>
+
+</body>
+</html>

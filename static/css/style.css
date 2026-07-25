@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #dfe6e9;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 900px;
+    max-width: 95%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.question {
+    margin-top: 25px;
+}
+
+.question h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.question p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.login-box {
+    width: 400px;
+    max-width: 90%;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e84118;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 18px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.option:hover {
+    border-color: #2196f3;
+    background: #eef6ff;
+}
+
+.option input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+#timerBox {
+    width: 220px;
+    margin: 20px auto;
+    padding: 12px;
+    background: #ff4757;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.palette {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.qbtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #dddddd;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.qbtn:hover {
+    background: #2196f3;
+    color: white;
+}
+
+.current {
+    background: #2196f3 !important;
+    color: white;
+}
+
+.answered {
+    background: #2ecc71 !important;
+    color: white;
+}
+
+.result-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.result-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+
+.pass {
+    color: green;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.review-box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    text-align: left;
+}
+
+.review-box h3 {
+    margin-bottom: 10px;
+}
+
+.review-box p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.result-table th {
+    background: #2196f3;
+    color: white;
+    padding: 15px;
+}
+
+.result-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Updated Stats Card */
+.stats-card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f4f6f8;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+}
+
+.stats-card h2 {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.stats-card h3 {
+    margin: 10px 0;
+}
+
+/* --- Added Dashboard & Menu Styles --- */
+
+.dashboard {
+    width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.dashboard h2 {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu button {
+    font-size: 18px;
+    margin: 8px 0;
+}

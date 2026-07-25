@@ -1,0 +1,51 @@
+subject,question,option1,option2,option3,option4,answer
+Java,Who developed Java?,James Gosling,Dennis Ritchie,Bjarne Stroustrup,Guido van Rossum,James Gosling
+Java,Which company originally developed Java?,Sun Microsystems,Microsoft,IBM,Oracle,Sun Microsystems
+Java,Which keyword is used to create an object?,new,class,this,object,new
+Java,Which method is the entry point of a Java program?,main(),start(),run(),init(),main()
+Java,Which package is imported by default in every Java program?,java.lang,java.util,java.io,java.sql,java.lang
+Java,Which keyword is used for inheritance?,extends,implements,inherits,super,extends
+Java,Which keyword is used to implement an interface?,implements,extends,interface,inherit,implements
+Java,Which keyword refers to the current object?,this,self,super,current,this
+Java,Which keyword refers to the parent class?,super,parent,base,extends,super
+Java,Java is a?,Object-Oriented Language,Procedural Language,Assembly Language,Scripting Language,Object-Oriented Language
+Java,Which data type stores true or false values?,boolean,bool,int,char,boolean
+Java,Which symbol is used to end a Java statement?,;,.,:,#,;
+Java,Which loop executes at least once?,do-while,while,for,foreach,do-while
+Java,Which keyword is used to stop a loop?,break,exit,stop,return,break
+Java,Which keyword skips the current iteration?,continue,skip,next,pass,continue
+Java,Which exception occurs when dividing by zero?,ArithmeticException,IOException,NullPointerException,SQLException,ArithmeticException
+Java,Which class is the parent of all Java classes?,Object,String,System,Class,Object
+Java,Which package contains ArrayList?,java.util,java.io,java.lang,java.sql,java.util
+Java,Which collection does not allow duplicate elements?,HashSet,ArrayList,LinkedList,Vector,HashSet
+Java,Which collection stores key-value pairs?,HashMap,HashSet,ArrayList,Queue,HashMap
+Java,Which keyword is used to define a constant?,final,const,static,constant,final
+Java,Which keyword is used to handle exceptions?,try,catch,throw,finally,try
+Java,Which block always executes whether an exception occurs or not?,finally,catch,throw,try,finally
+Java,Which keyword is used to throw an exception?,throw,throws,catch,try,throw
+Java,Which keyword specifies that a method may throw exceptions?,throws,throw,catch,try,throws
+Java,Which concept allows one method to have multiple forms?,Polymorphism,Inheritance,Encapsulation,Abstraction,Polymorphism
+Java,Which type of polymorphism is achieved using method overloading?,Compile-time Polymorphism,Run-time Polymorphism,Dynamic Binding,Inheritance,Compile-time Polymorphism
+Java,Which type of polymorphism is achieved using method overriding?,Run-time Polymorphism,Compile-time Polymorphism,Static Binding,Method Hiding,Run-time Polymorphism
+Java,Which keyword prevents a class from being inherited?,final,static,abstract,const,final
+Java,Which keyword is used to declare an abstract class?,abstract,interface,extends,implements,abstract
+Java,Can an abstract class contain both abstract and concrete methods?,Yes,No,Only Constructors,Only Static Methods,Yes
+Java,Which keyword is used to create a thread?,extends Thread,implements Runnable,new Thread(),All of these,All of these
+Java,Which method starts a new thread?,start(),run(),begin(),execute(),start()
+Java,Which method contains the code executed by a thread?,run(),start(),main(),execute(),run()
+Java,Which package contains thread-related classes?,java.lang,java.util,java.io,java.sql,java.lang
+Java,Which class is used for file handling?,File,FileReader,Scanner,Path,File
+Java,Which package contains the File class?,java.io,java.util,java.sql,java.net,java.io
+Java,Which class is used to read text from a file?,BufferedReader,FileWriter,PrintWriter,ObjectOutputStream,BufferedReader
+Java,Which class is used to write text to a file?,FileWriter,FileReader,Scanner,BufferedReader,FileWriter
+Java,What does JDBC stand for?,Java Database Connectivity,Java Data Connection,Java Database Control,Java Dynamic Connectivity,Java Database Connectivity
+Java,Which package is used for JDBC?,java.sql,java.db,java.jdbc,java.util,java.sql
+Java,Which JDBC method executes an SQL SELECT query?,executeQuery(),executeUpdate(),execute(),runQuery(),executeQuery()
+Java,Which JDBC method executes INSERT UPDATE or DELETE statements?,executeUpdate(),executeQuery(),execute(),updateQuery(),executeUpdate()
+Java,Which keyword is used to inherit an interface?,implements,extends,inherits,interface,implements
+Java,Which collection maintains insertion order?,LinkedHashSet,HashSet,TreeSet,HashMap,LinkedHashSet
+Java,Which collection automatically sorts its elements?,TreeSet,HashSet,ArrayList,Vector,TreeSet
+Java,Which class is mutable?,StringBuilder,String,Integer,Character,StringBuilder
+Java,Which class is immutable?,String,StringBuilder,StringBuffer,ArrayList,String
+Java,What does JVM stand for?,Java Virtual Machine,Java Variable Method,Java Verified Machine,Java Virtual Memory,Java Virtual Machine
+Java,What does JRE stand for?,Java Runtime Environment,Java Runtime Engine,Java Resource Environment,Java Runtime Edition,Java Runtime Environment

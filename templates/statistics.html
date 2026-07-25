@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Quiz Statistics</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Quiz Statistics</h1>
+
+<br>
+
+<div class="stats-card">
+
+<h2>Total Students : {{ students }}</h2>
+
+<h2>Total Questions : {{ questions }}</h2>
+
+<h2>Total Quiz Attempts : {{ quizzes }}</h2>
+
+<h2>Highest Percentage : {{ highest }}%</h2>
+
+<h2>Average Percentage : {{ average }}%</h2>
+
+</div>
+
+<br>
+
+<h2>Subject-wise Questions</h2>
+
+<table class="result-table">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Total Questions</th>
+
+</tr>
+
+<tr>
+<td>C</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>Java</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>DBMS</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>DSA</td>
+<td>50</td>
+</tr>
+
+<tr>
+<td>Aptitude</td>
+<td>50</td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">
+
+<button>
+
+Back to Admin Dashboard
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

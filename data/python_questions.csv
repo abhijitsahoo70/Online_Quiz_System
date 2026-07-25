@@ -1,0 +1,51 @@
+subject,question,option1,option2,option3,option4,answer
+Python,Who developed Python?,Guido van Rossum,Dennis Ritchie,James Gosling,Bjarne Stroustrup,Guido van Rossum
+Python,In which year was Python first released?,1989,1991,1995,2000,1991
+Python,Which keyword is used to define a function?,def,function,define,fun,def
+Python,Which keyword is used to create a class?,class,Class,struct,object,class
+Python,Which data type stores True or False?,bool,int,float,str,bool
+Python,Which symbol is used for single-line comments?,#,//,/*,--,#
+Python,Which function is used to display output?,print(),printf(),echo(),cout,print()
+Python,Which function is used to take user input?,input(),scanf(),cin(),read(),input()
+Python,Which data type is immutable?,tuple,list,set,dictionary,tuple
+Python,Which data type is mutable?,list,tuple,string,int,list
+Python,Which operator is used for exponentiation?,**,^,%,//,**
+Python,Which operator is used for floor division?,//,/,%,**,//
+Python,Which keyword is used for conditional statements?,if,when,case,switch,if
+Python,Which loop is used to iterate over a sequence?,for,while,do-while,repeat,for
+Python,Which loop continues until the condition becomes False?,while,for,foreach,repeat,while
+Python,Which keyword exits a loop?,break,continue,exit,pass,break
+Python,Which keyword skips the current iteration?,continue,break,pass,return,continue
+Python,Which keyword is used to define an anonymous function?,lambda,anonymous,func,def,lambda
+Python,Which collection stores key-value pairs?,dictionary,list,tuple,set,dictionary
+Python,Which collection stores unique elements?,set,list,tuple,dictionary,set
+Python,Which method adds an element to a list?,append(),insert(),extend(),add(),append()
+Python,Which method removes the last element from a list?,pop(),remove(),delete(),clear(),pop()
+Python,Which method sorts a list?,sort(),order(),arrange(),sortedlist(),sort()
+Python,Which built-in function returns the length of a sequence?,len(),count(),size(),length(),len()
+Python,Which keyword is used to import a module?,import,include,using,require,import
+Python,Which keyword is used to handle exceptions?,try,catch,throw,except,try
+Python,Which block always executes whether an exception occurs or not?,finally,except,try,raise,finally
+Python,Which keyword is used to raise an exception?,raise,throw,except,error,raise
+Python,Which keyword is used to define inheritance?,class,extends,inherit,Parent,class
+Python,Which function opens a file?,open(),file(),fopen(),read(),open()
+Python,Which mode opens a file for reading?,r,w,a,x,r
+Python,Which mode opens a file for writing?,w,r,a,x,w
+Python,Which mode opens a file for appending?,a,w,r,x,a
+Python,Which method reads the entire file?,read(),readline(),readlines(),get(),read()
+Python,Which method reads one line from a file?,readline(),read(),readlines(),getline(),readline()
+Python,Which method writes data into a file?,write(),append(),insert(),print(),write()
+Python,Which keyword is used to create an object?,Object creation does not require a keyword,new,create,class,Object creation does not require a keyword
+Python,Which special method is called automatically when an object is created?,__init__(),__main__(),__new__(),__start__(),__init__()
+Python,Which function returns the type of an object?,type(),typeof(),class(),datatype(),type()
+Python,Which module is used for mathematical functions?,math,cmath,numpy,random,math
+Python,Which module is used to generate random numbers?,random,math,os,time,random
+Python,Which module provides operating system functions?,os,sys,math,random,os
+Python,Which module is used for regular expressions?,re,regex,string,os,re
+Python,Which keyword creates an anonymous function?,lambda,def,func,anonymous,lambda
+Python,Which function is used to iterate over index and value together?,enumerate(),range(),zip(),index(),enumerate()
+Python,Which function combines multiple iterables?,zip(),map(),filter(),reduce(),zip()
+Python,Which method removes all items from a dictionary?,clear(),remove(),delete(),pop(),clear()
+Python,Which built-in function returns the maximum value?,max(),maximum(),largest(),high(),max()
+Python,Which built-in function returns the minimum value?,min(),minimum(),lowest(),small(),min()
+Python,Which built-in function returns the sum of all elements?,sum(),total(),add(),count(),sum

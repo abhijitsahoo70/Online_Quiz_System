@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Delete Questions</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Delete Questions</h1>
+
+<table border="1" width="100%" cellpadding="10">
+
+<tr>
+
+<th>ID</th>
+<th>Subject</th>
+<th>Question</th>
+<th>Action</th>
+
+</tr>
+
+{% for q in questions %}
+
+<tr>
+
+<td>{{ q[0] }}</td>
+
+<td>{{ q[1] }}</td>
+
+<td>{{ q[2] }}</td>
+
+<td>
+
+<a href="/remove_question/{{ q[0] }}">
+
+<button style="background:red">
+Delete
+</button>
+
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">
+<button>Back</button>
+</a>
+
+</div>
+
+</body>
+</html>

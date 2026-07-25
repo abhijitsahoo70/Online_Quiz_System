@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="dashboard">
+        
+        <h1>👨‍💼 Admin Dashboard</h1>
+        
+        <div class="stats-card">
+            <h3>👨 Students : {{ students }}</h3>
+            <h3>📚 Questions : {{ questions }}</h3>
+            <h3>📝 Quiz Attempts : {{ quizzes }}</h3>
+        </div>
+        
+        <br>
+
+        <div class="menu">
+            <a href="/add_question">
+                <button>➕ Add Question</button>
+            </a>
+            
+            <a href="/edit_question">
+                <button>✏️ Edit Question</button>
+            </a>
+            
+            <a href="/delete_question">
+                <button>🗑 Delete Question</button>
+            </a>
+            
+            <a href="/view_students">
+                <button>👥 View Students</button>
+            </a>
+            
+            <a href="/statistics">
+                <button>📊 Quiz Statistics</button>
+            </a>
+            
+            <a href="/leaderboard">
+                <button>🏆 Leaderboard</button>
+            </a>
+            
+            <a href="/quiz_history">
+                <button>📜 Quiz History</button>
+            </a>
+            
+            <a href="/logout">
+                <button>🚪 Logout</button>
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+subject,question,option1,option2,option3,option4,answer
+DBMS,What does DBMS stand for?,Database Management System,Data Backup Management System,Digital Base Management System,Database Monitoring System,Database Management System
+DBMS,Which language is used to query a database?,SQL,C,Java,Python,SQL
+DBMS,Which SQL command is used to retrieve data?,SELECT,GET,FETCH,DISPLAY,SELECT
+DBMS,Which SQL command is used to insert data?,INSERT,ADD,APPEND,UPDATE,INSERT
+DBMS,Which SQL command is used to modify existing records?,UPDATE,MODIFY,CHANGE,ALTER,UPDATE
+DBMS,Which SQL command is used to delete records?,DELETE,REMOVE,DROP,ERASE,DELETE
+DBMS,Which SQL command removes a table permanently?,DROP,DELETE,REMOVE,TRUNCATE,DROP
+DBMS,Which SQL command removes all rows but keeps the table?,TRUNCATE,DROP,DELETE,REMOVE,TRUNCATE
+DBMS,Which key uniquely identifies a record?,Primary Key,Foreign Key,Candidate Key,Alternate Key,Primary Key
+DBMS,Which key creates a relationship between two tables?,Foreign Key,Primary Key,Super Key,Unique Key,Foreign Key
+DBMS,Which normal form removes partial dependency?,2NF,1NF,3NF,BCNF,2NF
+DBMS,Which normal form removes transitive dependency?,3NF,2NF,1NF,BCNF,3NF
+DBMS,Which normal form removes repeating groups?,1NF,2NF,3NF,BCNF,1NF
+DBMS,Which join returns matching records from both tables?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL JOIN,INNER JOIN
+DBMS,Which join returns all rows from the left table?,LEFT JOIN,RIGHT JOIN,INNER JOIN,CROSS JOIN,LEFT JOIN
+DBMS,Which join returns all rows from the right table?,RIGHT JOIN,LEFT JOIN,INNER JOIN,FULL JOIN,RIGHT JOIN
+DBMS,Which clause is used to filter records?,WHERE,FILTER,HAVING,ORDER BY,WHERE
+DBMS,Which clause is used to sort records?,ORDER BY,SORT BY,GROUP BY,WHERE,ORDER BY
+DBMS,Which clause groups rows with the same values?,GROUP BY,ORDER BY,HAVING,WHERE,GROUP BY
+DBMS,Which clause filters grouped data?,HAVING,WHERE,GROUP BY,ORDER BY,HAVING
+DBMS,Which SQL function returns the total number of rows?,COUNT(),SUM(),AVG(),TOTAL(),COUNT()
+DBMS,Which SQL function returns the highest value?,MAX(),TOP(),HIGH(),LARGE(),MAX()
+DBMS,Which SQL function returns the lowest value?,MIN(),LOW(),SMALL(),BOTTOM(),MIN()
+DBMS,Which SQL function returns the average value?,AVG(),MEAN(),AVERAGE(),SUM(),AVG()
+DBMS,Which SQL function returns the total sum?,SUM(),TOTAL(),ADD(),AVG(),SUM()
+DBMS,Which SQL statement is used to create a new table?,CREATE TABLE,NEW TABLE,MAKE TABLE,BUILD TABLE,CREATE TABLE
+DBMS,Which constraint prevents duplicate values?,UNIQUE,NOT NULL,CHECK,DEFAULT,UNIQUE
+DBMS,Which constraint ensures a column cannot have NULL values?,NOT NULL,UNIQUE,CHECK,PRIMARY KEY,NOT NULL
+DBMS,Which constraint specifies a default value for a column?,DEFAULT,CHECK,UNIQUE,INDEX,DEFAULT
+DBMS,Which constraint limits the values that can be inserted?,CHECK,DEFAULT,UNIQUE,FOREIGN KEY,CHECK
+DBMS,What does ACID stand for?,Atomicity Consistency Isolation Durability,Accuracy Consistency Integrity Durability,Atomicity Correctness Isolation Durability,Accuracy Correctness Integrity Durability,Atomicity Consistency Isolation Durability
+DBMS,Which ACID property ensures all operations of a transaction are completed or none are?,Atomicity,Consistency,Isolation,Durability,Atomicity
+DBMS,Which ACID property ensures the database remains valid before and after a transaction?,Consistency,Atomicity,Isolation,Durability,Consistency
+DBMS,Which ACID property ensures transactions execute independently?,Isolation,Consistency,Atomicity,Durability,Isolation
+DBMS,Which ACID property ensures committed data is never lost?,Durability,Atomicity,Consistency,Isolation,Durability
+DBMS,What is a transaction in DBMS?,A logical unit of work,A database,A table,A query,A logical unit of work
+DBMS,Which SQL command permanently saves a transaction?,COMMIT,SAVE,END,FINISH,COMMIT
+DBMS,Which SQL command undoes changes before commit?,ROLLBACK,UNDO,CANCEL,RESET,ROLLBACK
+DBMS,Which command creates a savepoint in a transaction?,SAVEPOINT,POINTSAVE,MARK,SNAPSHOT,SAVEPOINT
+DBMS,Which lock allows multiple transactions to read data simultaneously?,Shared Lock,Exclusive Lock,Binary Lock,Update Lock,Shared Lock
+DBMS,Which lock prevents other transactions from reading or writing data?,Exclusive Lock,Shared Lock,Read Lock,Binary Lock,Exclusive Lock
+DBMS,Which indexing technique is commonly used in databases?,B+ Tree,DFS,BFS,Heap Sort,B+ Tree
+DBMS,Which type of key can uniquely identify a record and may contain multiple attributes?,Candidate Key,Foreign Key,Alternate Key,Composite Key,Candidate Key
+DBMS,Which ER model symbol represents an entity?,Rectangle,Diamond,Ellipse,Triangle,Rectangle
+DBMS,Which ER model symbol represents a relationship?,Diamond,Rectangle,Ellipse,Circle,Diamond
+DBMS,Which ER model symbol represents an attribute?,Ellipse,Rectangle,Diamond,Triangle,Ellipse
+DBMS,What is cardinality in DBMS?,Relationship between entities,Number of rows,Number of columns,Primary key value,Relationship between entities
+DBMS,Which normal form eliminates multivalued dependency?,4NF,3NF,2NF,BCNF,4NF
+DBMS,Which normal form eliminates join dependency?,5NF,4NF,BCNF,3NF,5NF
+DBMS,Which database model organizes data in rows and columns?,Relational Model,Hierarchical Model,Network Model,Object Model,Relational Model

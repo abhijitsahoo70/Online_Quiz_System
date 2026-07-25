@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Students</title>
+</head>
+<body>
+
+<h1>Registered Students</h1>
+
+<table border="1">
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+</tr>
+
+{% for s in students %}
+
+<tr>
+<td>{{ s[0] }}</td>
+<td>{{ s[1] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">
+<button>Back</button>
+</a>
+
+</body>
+</html>

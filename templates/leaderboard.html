@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaderboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏆 Leaderboard</h1>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+
+<tr>
+    <th>Rank</th>
+    <th>Student Name</th>
+    <th>Email</th>
+    <th>Highest Percentage</th>
+</tr>
+
+{% for row in leaders %}
+<tr>
+
+<td>
+{% if loop.index == 1 %}
+🥇
+{% elif loop.index == 2 %}
+🥈
+{% elif loop.index == 3 %}
+🥉
+{% else %}
+{{ loop.index }}
+{% endif %}
+</td>
+
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}%</td>
+
+</tr>
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/admin_dashboard">
+    <button>Back</button>
+</a>
+
+</div>
+
+</body>
+</html>

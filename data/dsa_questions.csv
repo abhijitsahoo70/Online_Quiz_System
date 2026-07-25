@@ -1,0 +1,51 @@
+subject,question,option1,option2,option3,option4,answer
+DSA,What does DSA stand for?,Data Structures and Algorithms,Digital System Architecture,Database System Application,Distributed System Algorithm,Data Structures and Algorithms
+DSA,Which data structure follows FIFO?,Queue,Stack,Tree,Graph,Queue
+DSA,Which data structure follows LIFO?,Stack,Queue,Linked List,Tree,Stack
+DSA,Which data structure uses nodes connected by pointers?,Linked List,Array,Queue,Stack,Linked List
+DSA,Which searching algorithm requires sorted data?,Binary Search,Linear Search,DFS,BFS,Binary Search
+DSA,What is the time complexity of Binary Search?,O(log n),O(n),O(n²),O(1),O(log n)
+DSA,What is the worst-case time complexity of Linear Search?,O(n),O(log n),O(n²),O(1),O(n)
+DSA,Which sorting algorithm repeatedly swaps adjacent elements?,Bubble Sort,Merge Sort,Quick Sort,Heap Sort,Bubble Sort
+DSA,Which sorting algorithm follows Divide and Conquer?,Merge Sort,Bubble Sort,Selection Sort,Insertion Sort,Merge Sort
+DSA,Which sorting algorithm has the best average-case performance?,Quick Sort,Bubble Sort,Selection Sort,Insertion Sort,Quick Sort
+DSA,Which data structure is used for recursion?,Stack,Queue,Array,Graph,Stack
+DSA,Which traversal visits Left Root Right?,Inorder,Preorder,Postorder,Level Order,Inorder
+DSA,Which traversal visits Root Left Right?,Preorder,Inorder,Postorder,Level Order,Preorder
+DSA,Which traversal visits Left Right Root?,Postorder,Preorder,Inorder,Level Order,Postorder
+DSA,Which graph traversal uses a queue?,BFS,DFS,Dijkstra,Prim,BFS
+DSA,Which graph traversal uses a stack?,DFS,BFS,Kruskal,Floyd,DFS
+DSA,Which data structure is best for implementing BFS?,Queue,Stack,Tree,Heap,Queue
+DSA,Which data structure is best for implementing DFS?,Stack,Queue,Array,Linked List,Stack
+DSA,Which algorithm is used to find the shortest path in a weighted graph?,Dijkstra,BFS,DFS,Prim,Dijkstra
+DSA,Which algorithm is used to find the Minimum Spanning Tree?,Prim,BFS,DFS,Binary Search,Prim
+DSA,Which algorithm also finds the Minimum Spanning Tree?,Kruskal,Dijkstra,BFS,DFS,Kruskal
+DSA,Which data structure represents hierarchical data?,Tree,Array,Queue,Stack,Tree
+DSA,Which data structure represents networks?,Graph,Tree,Stack,Queue,Graph
+DSA,What is the root node in a tree?,Topmost Node,Leaf Node,Middle Node,Parent Node,Topmost Node
+DSA,Which node has no children?,Leaf Node,Root Node,Parent Node,Internal Node,Leaf Node
+DSA,Which data structure is used in Heap Sort?,Heap,Queue,Stack,Graph,Heap
+DSA,What is the time complexity of Heap Sort in the worst case?,O(n log n),O(n²),O(log n),O(n),O(n log n)
+DSA,Which heap keeps the largest element at the root?,Max Heap,Min Heap,Binary Heap,Fibonacci Heap,Max Heap
+DSA,Which heap keeps the smallest element at the root?,Min Heap,Max Heap,Binary Heap,Binomial Heap,Min Heap
+DSA,Which technique stores key-value pairs for fast searching?,Hashing,Sorting,Searching,Recursion,Hashing
+DSA,What is the average-case time complexity of searching in a hash table?,O(1),O(n),O(log n),O(n²),O(1)
+DSA,Which collision resolution technique uses linked lists?,Separate Chaining,Linear Probing,Quadratic Probing,Double Hashing,Separate Chaining
+DSA,Which collision resolution technique searches sequentially for the next empty slot?,Linear Probing,Separate Chaining,Double Hashing,AVL Tree,Linear Probing
+DSA,Which algorithmic technique solves problems by breaking them into overlapping subproblems?,Dynamic Programming,Greedy Method,Backtracking,Divide and Conquer,Dynamic Programming
+DSA,Which algorithmic technique always chooses the locally optimal solution?,Greedy Algorithm,Dynamic Programming,Branch and Bound,Backtracking,Greedy Algorithm
+DSA,Which algorithm is used to solve the 0/1 Knapsack problem optimally?,Dynamic Programming,Greedy,BFS,DFS,Dynamic Programming
+DSA,Which algorithm is commonly used for Huffman Coding?,Greedy Algorithm,DFS,BFS,Binary Search,Greedy Algorithm
+DSA,Which notation represents the upper bound of an algorithm?,Big O,Big Omega,Big Theta,Little o,Big O
+DSA,Which notation represents the lower bound of an algorithm?,Big Omega,Big O,Big Theta,Little o,Big Omega
+DSA,Which notation represents the tight bound of an algorithm?,Big Theta,Big O,Big Omega,Little o,Big Theta
+DSA,What is the time complexity of inserting an element at the end of an array?,O(1),O(n),O(log n),O(n log n),O(1)
+DSA,What is the worst-case time complexity of inserting an element at the beginning of an array?,O(n),O(1),O(log n),O(n log n),O(n)
+DSA,Which tree is self-balancing?,AVL Tree,Binary Tree,Expression Tree,B-Tree,AVL Tree
+DSA,What is the maximum number of children a binary tree node can have?,2,1,3,Unlimited,2
+DSA,Which tree traversal is used to evaluate expression trees?,Postorder,Inorder,Preorder,Level Order,Postorder
+DSA,Which data structure is commonly used for expression evaluation?,Stack,Queue,Linked List,Graph,Stack
+DSA,Which algorithm detects cycles in a graph using Union-Find?,Kruskal,Prim,Dijkstra,Floyd,Kruskal
+DSA,Which graph algorithm works correctly even with negative edge weights but no negative cycles?,Bellman-Ford,Dijkstra,Prim,Kruskal,Bellman-Ford
+DSA,Which algorithm finds the shortest paths between all pairs of vertices?,Floyd-Warshall,Dijkstra,BFS,DFS,Floyd-Warshall
+DSA,Which data structure is best suited for implementing a priority queue?,Heap,Queue,Stack,Linked List,Heap
